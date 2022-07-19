@@ -1,0 +1,54 @@
+.sidemenu {
+    width: 300px;
+    height: 100vh;
+
+    background-color: var(--main-color);
+
+    position: fixed;
+    top: 0;
+
+    /* Disapper from the screen if not active */
+    right: -300px;
+
+    /* 
+        So that it comes in front of everyone
+        but NOT the menu button
+     */
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all ease 1s;
+}
+
+.sidemenu.active {
+    /* Go to the right if the menu is closed */
+    right: 0;
+}
+
+.sidemenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+
+    width: 60%;
+}
+
+.sidemenu ul li {
+    margin-bottom: 20px;
+}
+
+.sidemenu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidemenu ul li a:hover {
+    font-weight: 500;
+}
