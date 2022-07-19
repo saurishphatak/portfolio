@@ -1,3 +1,90 @@
 .introduction {
-    background-color: lightpink;
+    /* background-color: rgb(250, 250, 250); */
+    background-color: white;
+    display: flex;
+}
+
+.introduction .left {
+    flex: 0.5;
+
+    /* border: 1px solid green; */
+}
+
+.introduction .left .imgContainer {
+
+    width: 100%;
+    height: 100%;
+
+    /* border: 1px solid blue; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #dc143c;
+}
+
+.introduction .right {
+    flex: 0.5;
+
+    border: 1px solid red;
+
+    position: relative;
+}
+
+.introduction .right a {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    /* border: 1px solid green; */
+
+    /* margin-left: 30px; */
+}
+
+.introduction .right a .downIcon {
+    width: 60px;
+    height: 60px;
+
+    color: black;
+
+    animation: arrowBlink 2s infinite;
+
+}
+
+.introduction .introRightWrapper {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction .introRightWrapper h1 {
+    font-size: 60px;
+    margin: 10px 0;
+
+}
+
+.introduction .introRightWrapper h2 {
+    font-size: 35px;
+}
+
+.introduction .introRightWrapper h3 {
+    font-size: 30px;
+}
+
+.introduction .introRightWrapper h3 span {
+    font-size: inherit;
+    color: crimson
+}
+
+@keyframes arrowBlink {
+    100% {
+        opacity: 0;
+    }
 }
