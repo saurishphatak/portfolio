@@ -1,6 +1,6 @@
 import "./Introduction.css";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { Typewriter } from "react-simple-typewriter";
+import { init } from "ityped";
 
 export default function Introduction() {
 
@@ -20,6 +20,8 @@ export default function Introduction() {
                         //! TODO : Add software dev/ concept visualizer
                         //! animation
                      */}
+
+                        <span ></span>
 
                     </h3>
                 </div>

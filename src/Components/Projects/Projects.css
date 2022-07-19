@@ -1,3 +1,62 @@
 .projects {
-    background-color: lightskyblue;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects h1 {
+    font-size: 50px;
+
+    /* border: 1px solid red; */
+    padding: 10px;
+
+    overflow-y: hidden;
+}
+
+.projects .container {
+    /* border: 1px solid red; */
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    flex-wrap: wrap;
+}
+
+.projects .container .item {
+    border-radius: 20px;
+
+    border: 1px solid rgb(240, 239, 239);
+    margin: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    transition: 0.5s all ease;
+    cursor: pointer;
+
+}
+
+
+.projects .container .item:hover {
+    background-color: var(--main-color);
+}
+
+/* .projects .container .item:hover img {
+    opacity: 20%;
+    z-index: 1;
+} */
+
+.projects .container .item:hover .content {
+    color: white;
 }
