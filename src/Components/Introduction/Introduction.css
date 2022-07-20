@@ -67,7 +67,6 @@
 .introduction .introRightWrapper h1 {
     font-size: 60px;
     margin: 10px 0;
-
 }
 
 .introduction .introRightWrapper h2 {
@@ -86,5 +85,39 @@
 @keyframes arrowBlink {
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction .left, .introduction .right {
+        width: 100%;
+    }
+
+    .introduction .imgContainer {
+        align-items: center;
+    }
+
+    .introduction .right a {
+        left: 45%;
+        bottom: 5%;
+        /* border: 1px solid blue; */
+    }
+
+    .introduction .right .introRightWrapper {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .introduction .right .introRightWrapper h1 {
+        font-size: 40px;
+    }
+
+    .introduction .right .introRightWrapper h3 {
+        font-size: 20px;
     }
 }

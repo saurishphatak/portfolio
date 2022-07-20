@@ -60,3 +60,15 @@
 .projects .container .item:hover .content {
     color: white;
 }
+
+@media (max-width: 800px) {
+    .projects h1 {
+        font-size: 30px;
+    }
+
+    .projects .container {
+        width: 100%;
+    }
+
+
+}

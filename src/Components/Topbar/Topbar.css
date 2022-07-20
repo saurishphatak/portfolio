@@ -67,3 +67,9 @@
 .topbar.active .menuIcon {
     color: white;
 }
+
+@media (max-width: 800px) {
+    .topbar .wrapper .left .itemContainer {
+        display: none;
+    }
+}

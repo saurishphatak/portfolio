@@ -20,7 +20,7 @@ function App() {
 
                 <Projects />
 
-                <Works />
+                {/* <Works /> */}
             </div>
         </div>
     );

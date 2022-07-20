@@ -8,11 +8,11 @@ interface Props {
 export default function Topbar(props: Props) {
     return (
         <div className={"topbar " + (props.menuOpen && "active")}>
-
             <div className="wrapper">
+
                 <div className="left">
                     <a href="#introduction" className="logo">
-                        genius.
+                        dev.
                     </a>
 
                     <div className="itemContainer">

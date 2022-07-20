@@ -1,8 +1,18 @@
 import "./Introduction.css";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
 export default function Introduction() {
+
+    const spanRef = useRef(null);
+    useEffect(() => {
+        if (spanRef.current) {
+            init(spanRef.current, {
+                strings: ["Software Developer", "Concept Visualizer"]
+            });
+        }
+    }, []);
 
     return (
         <div className="introduction" id="introduction">
@@ -21,7 +31,7 @@ export default function Introduction() {
                         //! animation
                      */}
 
-                        <span ></span>
+                        <span ref={spanRef}></span>
 
                     </h3>
                 </div>
