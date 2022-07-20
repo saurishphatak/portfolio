@@ -4,6 +4,7 @@ import Projects from './Components/Projects/Projects';
 import Topbar from './Components/Topbar/Topbar';
 import "./App.css";
 import SideMenu from './Components/SideMenu/SideMenu';
+import Works from './Components/Works/Works';
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +19,8 @@ function App() {
                 <Introduction />
 
                 <Projects />
+
+                <Works />
             </div>
         </div>
     );
