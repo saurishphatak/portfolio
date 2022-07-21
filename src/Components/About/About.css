@@ -152,14 +152,11 @@
         font-size: 30px;
 
         /* height: 20%; */
-
-        border: 1px solid white;
-
         position: static;
     }
 
     .about-me-text {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         padding: 10px;
         /* justify-content: space-around; */
         /* align-items: center; */

@@ -4,7 +4,7 @@ import "./About.css";
 
 export default function About() {
     return (
-        <div className="about">
+        <div className="about" id='about-me-contact'>
 
             <div className="about-left">
 
@@ -17,16 +17,17 @@ export default function About() {
                         <span id='sde'> software developer</span> and a
                         <span id='cv'> concept visualizer</span>.
 
-                        <p>
-                            <br />
-                            I use diagrams (Concept Visuals) to learn, retain and present abstract information like computer programming.
-                        </p>
+                    </p>
+
+                    <p>
+                        I use diagrams (Concept Visuals) to learn, retain and present abstract information like computer programming.
 
                     </p>
 
                     <p>
                         Also, I get my cardio done by running code!
-                        <p >🏃‍♂️ == 💻</p>
+                        <br />
+                        <span >🏃‍♂️ == 💻</span>
                     </p>
 
                 </div>

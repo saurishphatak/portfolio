@@ -17,6 +17,10 @@ export default function SideMenu(props: Props) {
         {
             link: "projects",
             text: "Projects"
+        },
+        {
+            link: "about-me-contact",
+            text: "About Me | Contact"
         }
     ].map(listItem => {
         return (
