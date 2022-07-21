@@ -31,14 +31,14 @@ export default function Projects() {
                     </CardContent>
 
                     <CardActions>
-                        {project.repoLink?.length > 0 &&
+                        {project?.repoLink?.length > 0 &&
 
                             <a href={project.repoLink}>
                                 <Button size="small">See Code</Button>
                             </a>
                         }
 
-                        {project.liveDemoLink?.length > 0 &&
+                        {project?.liveDemoLink?.length > 0 &&
                             <a href={project.liveDemoLink}>
                                 <Button size="small">Live Demo</Button>
                             </a>
