@@ -1,4 +1,6 @@
-export const projects = [
+import { IProject } from "./Interfaces/IProject";
+
+export const projects: IProject[] = [
     {
         image: "assets/AraamTSImage.jpeg",
         title: "Araam TS",
