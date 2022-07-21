@@ -8,7 +8,17 @@ import Works from './Components/Works/Works';
 import About from './Components/About/About';
 
 function App() {
-    const [menuOpen, setMenuOpen] = useState(false);
+    let [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleSidemenu = () => {
+
+        setMenuOpen(previous => {
+            // Close the menu only if it is open
+            if (previous)
+                return menuOpen = !previous;
+            return previous;
+        });
+    }
 
     return (
         <div className="app">
@@ -16,7 +26,10 @@ function App() {
 
             <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-            <div className="sections">
+            <div className="sections"
+                onClick={toggleSidemenu}
+            >
+
                 <Introduction />
 
                 <Projects />

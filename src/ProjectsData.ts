@@ -8,5 +8,6 @@ export const projects = [
         image: "assets/DataClassGeneratorImage.jpeg",
         title: "Data Class Generator",
         description: "Tired of writing Data Classes by hand? Data Class Generator to the rescue! Configure your data classes on the web and download the auto generated class."
-    }
+    },
+
 ];
