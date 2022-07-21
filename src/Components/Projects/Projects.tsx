@@ -1,5 +1,5 @@
 import "./Projects.css";
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { Fragment } from "react";
 import { projects } from "../../ProjectsData";
 
@@ -29,6 +29,21 @@ export default function Projects() {
                             {project.description}
                         </Typography>
                     </CardContent>
+
+                    <CardActions>
+                        {project.repoLink?.length > 0 &&
+
+                            <a href={project.repoLink}>
+                                <Button size="small">See Code</Button>
+                            </a>
+                        }
+
+                        {project.liveDemoLink?.length > 0 &&
+                            <a href={project.liveDemoLink}>
+                                <Button size="small">Live Demo</Button>
+                            </a>
+                        }
+                    </CardActions>
                 </Card>
             </Fragment >
         )

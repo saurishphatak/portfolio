@@ -47,10 +47,14 @@
 
 }
 
+.projects .container .item a {
+    text-decoration: none;
+}
 
 .projects .container .item:hover {
     background-color: var(--main-color);
 }
+
 
 /* .projects .container .item:hover img {
     opacity: 20%;
