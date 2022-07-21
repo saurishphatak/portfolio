@@ -1,4 +1,5 @@
 import React from 'react';
+import { environment } from '../../environment';
 import "./About.css";
 
 export default function About() {
@@ -33,7 +34,23 @@ export default function About() {
             </div>
 
             <div className="about-right">
-                Right
+                <h1>Contact</h1>
+
+                <div className="contact-me-text">
+                    <p>
+                        Pop me an email at
+                        <br />
+                    </p>
+
+                    <span id='email'>{environment.myEmail}</span>
+
+                </div>
+
+                <a href={`mailto:${environment.myEmail}`}>
+                    <button
+                        id='get-in-touch-button'
+                    >Let's get in touch!</button>
+                </a>
             </div>
         </div>
     )

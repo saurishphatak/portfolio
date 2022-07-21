@@ -1,5 +1,5 @@
 .about {
-    background-color: lightgoldenrodyellow;
+    background-color: white;
 
     display: flex;
 }
@@ -18,15 +18,42 @@
     flex-direction: column;
     align-items: center;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     padding: 20px;
+
+    position: relative;
 }
 
-.about-left h1 {
+.about-right {
+    flex: 1;
+
+    width: 100%;
+
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* padding: 20px; */
+
+    position: relative;
+}
+
+.about-left h1, .about-right h1 {
     overflow: hidden;
 
     font-size: 50px;
+
+    position: absolute;
+
+    top: 10%;
+}
+
+.about-right h1 {
+    color: var(--main-color);
 }
 
 .about-me-text {
@@ -50,14 +77,59 @@
     font-size: 25px;
 }
 
-.about-right {
-    flex: 1;
-}
-
-#sde, #cv {
+#sde, #cv, #email {
     color: crimson;
 
     font-weight: bold;
+}
+
+.about-right .contact-me-text {
+    color: var(--main-color);
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    height: 30%;
+
+    padding: 10px;
+    font-size: 25px;
+
+    margin-bottom: 0;
+
+}
+
+.about-right a {
+    text-align: center;
+    padding: 5%;
+
+    width: 50%;
+
+    /* border: 1px solid black; */
+}
+
+#get-in-touch-button {
+    /* padding: 2%; */
+    padding: 5%;
+    /* width: 30%; */
+
+
+    border-radius: 20px;
+    border: none;
+
+    background-color: crimson;
+    color: white;
+
+    font-size: 1.2rem;
+}
+
+#get-in-touch-button:hover {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
 }
 
 @media (max-width: 800px) {
@@ -74,25 +146,58 @@
     .about-left h1 {
         /* border: 1px solid white; */
 
-        margin: 10% 0 0 0;
-
+        /* margin: 10% 0 0 0; */
+        margin-bottom: 5%;
+        margin-top: 5%;
         font-size: 30px;
 
-        height: 20%;
+        /* height: 20%; */
+
+        border: 1px solid white;
+
+        position: static;
     }
 
     .about-me-text {
-        padding: 0px;
+        border: 1px solid white;
+        padding: 10px;
         /* justify-content: space-around; */
         /* align-items: center; */
 
         width: 90%;
-        height: 70%;
+        height: 60%;
 
         margin: 0;
     }
 
     .about-me-text p {
         font-size: 15px;
+    }
+
+    .about-right h1 {
+        /* border: 1px solid black; */
+        position: static;
+
+        font-size: 30px;
+
+        margin-bottom: 0%;
+    }
+
+    .contact-me-text {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+
+        height: 40%;
+    }
+
+    .contact-me-text p, .contact-me-text span {
+        font-size: 15px;
+    }
+
+    #get-in-touch-button {
+        font-size: 0.7rem;
     }
 }
