@@ -1,7 +1,6 @@
 import React from 'react';
 import { environment } from '../../environment';
 import "./About.css";
-import { SvgIcon } from '@mui/material';
 
 export default function About() {
     return (

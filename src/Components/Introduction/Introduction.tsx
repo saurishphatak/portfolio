@@ -18,7 +18,7 @@ export default function Introduction() {
         <div className="introduction" id="introduction">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/Test 2.png" alt="" />
+                    <img src="assets/My Avatar.png" alt="" />
 
                 </div>
             </div>
