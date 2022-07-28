@@ -17,7 +17,10 @@ export default function Introduction() {
     return (
         <div className="introduction" id="introduction">
             <div className="left">
-                <div className="imgContainer"></div>
+                <div className="imgContainer">
+                    <img src="assets/Test 2.png" alt="" />
+
+                </div>
             </div>
 
             <div className="right">

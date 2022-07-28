@@ -15,19 +15,29 @@
     width: 100%;
     height: 100%;
 
-    /* border: 1px solid blue; */
-
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid blue; */
 
-    background-color: #dc143c;
+
+    background-color: white;
+
+}
+
+.introduction .left .imgContainer img {
+
+    object-fit: scale-down;
+
+    /* border: 1px solid red; */
+    height: 90%;
 }
 
 .introduction .right {
     flex: 0.5;
 
     /* border: 1px solid red; */
+    background-color: crimson;
 
     position: relative;
 }
@@ -62,6 +72,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    color: white;
 }
 
 .introduction .introRightWrapper h1 {
@@ -79,7 +91,8 @@
 
 .introduction .introRightWrapper h3 span {
     font-size: inherit;
-    color: crimson
+    /* color: crimson */
+    color: var(--main-color);
 }
 
 @keyframes arrowBlink {

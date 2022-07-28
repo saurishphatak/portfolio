@@ -12,7 +12,7 @@ export default function Topbar(props: Props) {
 
                 <div className="left">
                     <a href="#introduction" className="logo">
-                        dev.
+                        saurish.
                     </a>
 
                     <div className="itemContainer">
