@@ -25,7 +25,7 @@ export default function Projects() {
                         <Typography gutterBottom variant="h5" component="div">
                             {project.title}
                         </Typography>
-                        <Typography variant="body2" >
+                        <Typography variant="body2" className="project-description">
                             {project.description}
                         </Typography>
                     </CardContent>
@@ -54,15 +54,6 @@ export default function Projects() {
             <h1>Projects</h1>
 
             <div className="container">
-                {/* <div className="item">
-                    <img src="assets/DataClassGeneratorImage.jpeg" alt="" />
-                    <h3>Data Class Generator</h3>
-                </div>
-
-                <div className="item">
-                    <img src="assets/AraamTSImage.jpeg" alt="" />
-                    <h3>Araam TS</h3>
-                </div> */}
 
                 {projectCards}
 

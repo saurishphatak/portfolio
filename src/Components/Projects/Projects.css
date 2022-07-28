@@ -55,6 +55,9 @@
     background-color: var(--main-color);
 }
 
+.projects .container .item .content {
+    overflow: hidden;
+}
 
 /* .projects .container .item:hover img {
     opacity: 20%;
