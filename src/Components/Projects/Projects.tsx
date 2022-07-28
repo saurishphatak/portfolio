@@ -33,13 +33,13 @@ export default function Projects() {
                     <CardActions>
                         {project?.repoLink?.length > 0 &&
 
-                            <a href={project.repoLink}>
+                            <a href={project.repoLink} target="blank">
                                 <Button size="small">See Code</Button>
                             </a>
                         }
 
                         {project?.liveDemoLink?.length > 0 &&
-                            <a href={project.liveDemoLink}>
+                            <a href={project.liveDemoLink} target="black">
                                 <Button size="small">Live Demo</Button>
                             </a>
                         }

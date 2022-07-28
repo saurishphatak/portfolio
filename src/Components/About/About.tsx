@@ -48,7 +48,7 @@ export default function About() {
                 </div>
 
                 <div className="contact-me-icons">
-                    <a href={environment.gitlabLink}>
+                    <a href={environment.gitlabLink} target="blank">
                         <svg id='gitlab-icon' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="50" height="50"
                             viewBox="0 0 50 50"
@@ -58,7 +58,7 @@ export default function About() {
                         </svg>
                     </a>
 
-                    <a href={environment.linkedinLink}>
+                    <a href={environment.linkedinLink} target="blank">
                         <svg id='linkedin-icon' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="50" height="50"
                             viewBox="0 0 50 50"
