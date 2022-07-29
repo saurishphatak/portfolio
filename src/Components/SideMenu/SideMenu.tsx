@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { environment } from "../../environment";
 import "./SideMenu.css";
 
 interface Props {
@@ -11,22 +12,27 @@ export default function SideMenu(props: Props) {
 
     const listItems = [
         {
-            link: "introduction",
+            url: "#introduction",
             text: "Introduction"
         },
         {
-            link: "projects",
+            url: "#projects",
             text: "Projects"
         },
         {
-            link: "about-me-contact",
+            url: environment.resumeLink,
+            text: "Resume",
+            target: "blank"
+        },
+        {
+            url: "#about-me-contact",
             text: "About Me | Contact"
         }
     ].map(listItem => {
         return (
-            <Fragment key={listItem.link}>
+            <Fragment key={listItem.url}>
                 <li onClick={() => { props.setMenuOpen(false); }}>
-                    <a href={`#${listItem.link}`}>{listItem.text}</a>
+                    <a href={`${listItem.url}`} target={listItem.target && listItem.target.length > 0 ? listItem.target : ""}>{listItem.text}</a>
                 </li>
             </Fragment>
         )
