@@ -38,11 +38,11 @@ export default function Projects() {
                             </a>
                         }
 
-                        {project?.liveDemoLink?.length > 0 &&
+                        {/* {project?.liveDemoLink?.length > 0 &&
                             <a href={project.liveDemoLink} target="black">
                                 <Button size="small">Live Demo</Button>
                             </a>
-                        }
+                        } */}
                     </CardActions>
                 </Card>
             </Fragment >
